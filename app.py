@@ -16,7 +16,7 @@ def chat():
     user_input = request.json.get('message')
     
     # Get the model name from the config
-    model_name = os.getenv("LLM_MODEL_NAME", "gpt-3.5-turbo")
+    model_name = os.getenv("MY_NAME")
     
     try:
         response = client.chat.completions.create(
